@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cut -f 17 -d, 1999.csv | egrep \ 'LAX|SFO|SMF|OAK' | sort | uniq -c
