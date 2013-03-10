@@ -68,3 +68,10 @@ create table bayAreaDelays AS
 SELECT Origin, Year, ArrDelay, DepDelay
 FROM delays
 WHERE Origin IN ('LAX', 'OAK', 'SFO', 'SMF');
+
+
+
+create table bayArrivalDelays AS
+SELECT Origin, Dest, Year, ArrDelay, DepDelay
+FROM delays
+WHERE Origin IN ('LAX', 'OAK', 'SFO', 'SMF');
